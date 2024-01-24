@@ -7,7 +7,7 @@ use num_traits::real::Real;
 /// # Example
 ///
 /// ```
-/// use crate::dimensional_vectors::vector::Vector3D;
+/// use crate::dim_vecs::vector::Vector3D;
 ///
 /// let v1 = Vector3D::new(1.0, 2.0, 3.0);
 /// let v2 = Vector3D::new(4.0, 5.0, 6.0);
@@ -94,7 +94,7 @@ impl <T> Default for Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Examples
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let v: Vector3D<f64> = Vector3D::default();
     /// println!("Vector: {:?}", v);
@@ -115,7 +115,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Examples
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let array = [1.0, 2.0, 3.0];
     /// let v = Vector3D::from_vec(&array);
@@ -137,7 +137,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Examples
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let v = Vector3D::new(1.0, 2.0, 3.0);
     /// println!("Vector: {:?}", v);
@@ -164,7 +164,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Examples
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let v1 = Vector3D::new(1.0, 1.0, 1.0);
     /// let v2 = Vector3D::new(1.0, 1.0, -1.0);
@@ -188,7 +188,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Examples
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     ///     let v = Vector3D::new(1.0, 1.0, 1.0);
     ///     println!("Vector: {:?}", v.length());
@@ -207,7 +207,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Examples
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let v1 = Vector3D::new(1.0, 2.0, 3.0);
     /// let v2 = Vector3D::new(4.0, 5.0, 6.0);
@@ -226,7 +226,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Examples
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let v1 = Vector3D::new(1.0, 2.0, 3.0);
     /// let v2 = Vector3D::new(4.0, 5.0, 6.0);
@@ -241,7 +241,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Example
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     /// let v1 = Vector3D::new(1.0, 2.0, 3.0);
     /// let v2 = Vector3D::new(4.0, 5.0, 6.0);
     /// assert_eq!(v1.distance_squared(&v2),27.0);
@@ -259,7 +259,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Examples
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let v: Vector3D<f64> = Vector3D::random_unit_vector();
     /// println!("Vector: {:?}", v);
@@ -286,7 +286,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Examples
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let vec1: Vector3D<f64> = Vector3D::x();
     /// let vec2: Vector3D<f64> = Vector3D::y();
@@ -304,7 +304,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Examples
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let vec_a = Vector3D::new(1.0, 0.0, 0.0);
     /// let vec_b = Vector3D::new(0.0, 1.0, 0.0);
@@ -329,7 +329,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     /// # Example
     ///
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let vec1 = Vector3D::new(1.0,2.0,3.0);
     /// assert_eq!(vec1.normalize().length().ceil(),1.0)
@@ -349,7 +349,7 @@ impl <T> Vector3D<T> where T: Real + From<f64> + Into<f64> {
     ///
     /// # Example
     /// ```
-    /// use crate::dimensional_vectors::vector::Vector3D;
+    /// use crate::dim_vecs::vector::Vector3D;
     ///
     /// let start_point = Vector3D::new(1.0,0.0,0.0);
     /// let middle_point = Vector3D::new(0.0,0.0,0.0);
